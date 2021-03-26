@@ -1,4 +1,5 @@
-require('dotenv').config();
+/*
+require('.env').config();
 const Web3 = require("web3");
 const web3 = new Web3();
 const WalletProvider = require("truffle-wallet-provider");
@@ -11,6 +12,7 @@ var mainNetProvider = new WalletProvider(mainNetWallet, "https://mainnet.infura.
 var ropstenPrivateKey = new Buffer(process.env["ROPSTEN_PRIVATE_KEY"], "hex")
 var ropstenWallet = Wallet.fromPrivateKey(ropstenPrivateKey);
 var ropstenProvider = new WalletProvider(ropstenWallet, "https://ropsten.infura.io/");
+*/
 
 module.exports = {
   networks: {
@@ -21,21 +23,21 @@ module.exports = {
 		},
 		mainnet: {  // Provided by Infura, load keys in .env file
 			network_id: "1",
-			provider: mainNetProvider,
+			//provider: mainNetProvider,
 			gas: 4600000,
-			gasPrice: web3.utils.toWei("20", "gwei"),
+			//gasPrice: web3.utils.toWei("20", "gwei"),
 		},
 		ropsten: { // Provided by Infura, load keys in .env file
 			network_id: "3",
-			provider: ropstenProvider,
+			//provider: ropstenProvider,
 			gas: 4600000,
-			gasPrice: web3.utils.toWei("20", "gwei"),
+			//gasPrice: web3.utils.toWei("20", "gwei"),
 		},
-		rinkeby {
+		rinkeby: {
 			network_id: "4",
-			provider: rinkebyProvider,
+			//provider: rinkebyProvider,
 			gas: 4600000,
-			gasPrice: web3.utils.toWei("20", "gwei"),
+			//gasPrice: web3.utils.toWei("20", "gwei"),
 		},
 		kovan: {
 			network_id: 42,

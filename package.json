@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mashharuki/METoken/issues"
   },
-  "homepage": "https://github.com/mashharuki/METoken#readme"
+  "homepage": "https://github.com/mashharuki/METoken#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
+  }
 }
