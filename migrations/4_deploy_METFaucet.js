@@ -8,5 +8,5 @@ module.exports = function (deployer) {
     deployer.deploy(METoken, {from: owner}).then(function() {
         // METFaucetをデプロイする。
         deployer.deploy(METFaucet, MEtoken.address, owner);
-    })
+    });
 }
